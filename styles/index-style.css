@@ -1,0 +1,222 @@
+.top-page {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: "Source Code Pro", sans-serif;
+}
+
+.down-page {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background: #ddd;
+    background: var(--gradient);;
+    animation: bg-animation 20s infinite alternate;
+    background-size: 400%;
+    background-position: center;
+    font-family: "Source Code Pro", sans-serif;
+}
+
+.content {
+    background: white;
+    width: 70vw;
+    padding: 3em;
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+    margin-top: 3em;
+}
+
+.typediv {
+    text-align: center;
+    padding-top: 15%;
+}
+
+
+.title {
+    margin: 0 0 0.5em;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3rem;
+    color: #ee6352;
+    line-height: 0.8;
+    margin: 0;
+    text-align: center;
+}
+
+.myPhoto {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+}
+
+.myPhoto figure {
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.myPhoto figcaption {
+    padding-top: 20px;
+    text-align: center;
+    width: 200px;
+    color: white;
+}
+
+.myPhoto figure img {
+    border: 2px solid white;
+    width: 200px;
+    border-radius: 30%;
+    box-shadow: gray 10px 10px 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.myPhoto-div {
+    padding-top: 20%;
+    padding-left: 10%;
+    position: relative;
+}
+
+.aboutme {
+    padding-top: 5%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+.blackBox {
+    background: rgba(0, 0, 0, 0.5);;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+.blackBox p {
+    color: white;
+    font-size: 15;
+    font-family: "Source Code Pro", sans-serif;
+    margin-top: 6px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.arrow-down {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+    justify-content: center;
+}
+
+.arrow-down figure img {
+    width: 100px;
+    border-radius: 30%;
+}
+
+.arrow-up {
+    position: absolute;
+    padding-top: 5%;
+    padding-left: 28%;
+    justify-content: center;
+}
+
+.arrow-up figure img {
+    width: 100px;
+    border-radius: 30%;
+    transform: rotate(180deg);
+}
+
+.my-tech-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.my-tech-div .tech-photo {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+
+
+.tech-photo figure img {
+    width: 200px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .myPhoto {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        padding-top: 5%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .grid {
+        display: list-item;
+    }
+
+    .typediv {
+        padding-top: 30%;
+    }
+
+    .down-page {
+        height: auto;
+    }
+
+    .aboutme {
+        padding-top: 10%;
+        padding-right: 10%;
+        padding-left: 10%;
+        padding-bottom: 20%;
+        text-align: center;
+    }
+
+    .myPhoto {
+        padding: 20px;
+        padding-right: 18%;
+        display: flex;
+        flex-direction: row;
+        padding-top: 5%;
+    }
+
+    .arrow-up {
+        display:none
+    }
+
+    .my-tech-div {
+        display: list-item;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .my-tech-div {
+        display: list-item;
+    }
+
+    .down-page {
+        height: auto;
+    }
+
+    .arrow-up {
+        /* display: list-item; */
+        padding-top: 5%;
+        padding-right: 13%;
+        justify-content: center;
+        padding-bottom: 15%;
+    }
+}
+
+
+
