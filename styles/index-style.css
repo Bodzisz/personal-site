@@ -139,6 +139,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    list-style: none;
 }
 
 .my-tech-div .tech-photo {
