@@ -153,6 +153,10 @@
     width: 200px;
 }
 
+.arrow-up .grow:hover {
+    transform: rotate(180deg) scale(1.4); 
+}
+
 @media screen and (max-width: 600px) {
 
     .myPhoto {
