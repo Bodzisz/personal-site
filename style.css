@@ -64,6 +64,10 @@ nav ul li a {
     font-size: 13;
 }
 
+nav a:hover{ 
+	color: aqua;
+} 
+
 footer {
     position: fixed;
     bottom: 0;
