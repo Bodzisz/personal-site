@@ -2,3 +2,152 @@ h1 {
     padding-top: 10%;
     text-align: center;
 }
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-header {
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+.contact-grid {
+    margin: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: rgba(0, 0, 0, 0.5);;
+    border-radius: 20px;
+}
+
+.form-div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 50px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.form-div form {
+    width: 80%;
+}
+
+.form-div h2 {
+    font-size: 30;
+    font-weight: 500;
+    font-family: "Source Code Pro", sans-serif;
+}
+
+.form-div .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-div .input-box input,
+.form-div .input-box textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.form-div .input-box textarea {
+    height: 100px;
+}
+
+.form-div .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.form-div .input-box input:focus ~ span,
+.form-div .input-box input:valid ~ span,
+.form-div .input-box textarea:focus ~ span,
+.form-div .input-box textarea:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.form-div .input-box button {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.contact-info {
+    color: white;
+}
+
+.contact-info .contact-item {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.contact-item .icon {
+    position: relative;
+}
+
+.contact-item .text p {
+    word-wrap: break-word;
+}
+
+.contact-item .icon img {
+    width: 80px;
+    height: 50px;
+    color: white;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-grid {
+        display: list-item;
+    }
+
+    .contact-info {
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+
+    .contact-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-item .text {
+        width: 100%;
+    }
+
+    .contact-item .icon {
+        position: relative;
+    }
+
+    .contact-item .icon img {
+        
+    }
+}
