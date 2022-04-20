@@ -56,6 +56,10 @@ body {
     background-image: url(../images/max3sat.jpg);
 }
 
+.scala {
+    background-image: url(../images/scala.png);
+}
+
 .card:hover,
 .card:focus-within {
     transform: scale(1.05);
