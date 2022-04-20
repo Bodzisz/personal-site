@@ -148,6 +148,18 @@ body {
         transition-delay: 500ms;
     }
 
+    .table-reservation:hover .card-content,
+    .card:focus-within .card-content,
+    .codewars:hover .card-content,
+    .card:focus-within .card-content {
+        transform: translateY(5%);
+    }
+
+    .max3sat:hover .card-content,
+    .card:focus-within .card-content {
+        transform: translateY(27%);
+    }
+
     .card:focus-within .card-content {
         transition-duration: 0ms;
     }
