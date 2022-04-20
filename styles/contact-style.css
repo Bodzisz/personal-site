@@ -142,6 +142,7 @@ body {
 
     .contact-grid {
         display: list-item;
+        list-style: none;
     }
 
     .contact-info {
