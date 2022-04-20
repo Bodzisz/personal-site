@@ -130,6 +130,18 @@ body {
         transition: transform 500ms ease;
     }
 
+    .my-post-board .card-content {
+        transform: translateY(65%);
+    }
+
+    .max3sat .card-content {
+        transform: translateY(77%);
+    }
+
+    .scala .card-content {
+        transform: translateY(62%);
+    }
+
     .card:hover .card-content,
     .card:focus-within .card-content {
         transform: translateY(0);
