@@ -73,7 +73,6 @@
 }
 
 .myPhoto figure img {
-    /* border: 2px solid white; */
     width: 200px;
     border-radius: 30%;
     box-shadow: gray 10px 10px 10px;
@@ -168,6 +167,13 @@
 @keyframes blink {
     to {
         background: transparent;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .blackBox {
+        padding: 0px;
     }
 }
 
