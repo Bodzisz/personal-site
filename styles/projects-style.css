@@ -60,6 +60,10 @@ body {
     background-image: url(../images/scala.png);
 }
 
+.alcohol {
+    background-image: url(../images/alcohol.jpg);
+}
+
 .card:hover,
 .card:focus-within {
     transform: scale(1.05);
@@ -139,6 +143,10 @@ body {
     }
 
     .scala .card-content {
+        transform: translateY(62%);
+    }
+
+    .alcohol .card-content {
         transform: translateY(62%);
     }
 
